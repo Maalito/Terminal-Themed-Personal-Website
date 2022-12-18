@@ -30,10 +30,10 @@ reach.addEventListener('click', () => {
         background: '#00aa00',
         width: '500px',
         heigt: '500px',
-        top: 75,
-        bottom: 75,
-        right: 75,
-        left: 75,
+        top: 25,
+        bottom: 25,
+        right: 25,
+        left: 25,
         mount: reachContent,
         onfocus: function () {
             this.setBackground('#00aa00')
