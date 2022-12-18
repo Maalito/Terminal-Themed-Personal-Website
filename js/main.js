@@ -1,0 +1,46 @@
+const bio = document.querySelector('#bio')
+const reach = document.querySelector('#reach')
+const bioContent = document.querySelector('#bio-content')
+const reachContent = document.querySelector('#reach-content')
+
+bio.addEventListener('click', () => {
+    const bioBox = new WinBox({
+        title: 'whoami',
+        // modal: true,
+        width: '500px',
+        heigt: '500px',
+        top: 75,
+        bottom: 75,
+        right: 75,
+        left: 75,
+        mount: bioContent,
+        onfocus: function () {
+            this.setBackground('#00aa00')
+        },
+        onblur: function () {
+            this.setBackground('#777')
+        },
+    })
+})
+
+reach.addEventListener('click', () => {
+    const reachBox = new WinBox({
+        title: 'reach-me.txt',
+        // modal: true,
+        background: '#00aa00',
+        width: '500px',
+        heigt: '500px',
+        top: 75,
+        bottom: 75,
+        right: 75,
+        left: 75,
+        mount: reachContent,
+        onfocus: function () {
+            this.setBackground('#00aa00')
+        },
+        onblur: function () {
+            this.setBackground('#777')
+        },
+    })
+})
+
