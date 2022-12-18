@@ -7,8 +7,8 @@ bio.addEventListener('click', () => {
     const bioBox = new WinBox({
         title: 'whoami',
         // modal: true,
-        width: '50vh',
-        heigt: '50vh',
+        width: '500px',
+        heigt: '500px',
         top: 25,
         bottom: 25,
         right: 25,
